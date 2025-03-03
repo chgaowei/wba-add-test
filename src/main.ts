@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Set default auth URL if empty
                 if (!authUrlEl.value) {
-                    setTextareaValueAndResize(authUrlEl, 'https://agent-network-protocol.com/wba/test');
+                    setTextareaValueAndResize(authUrlEl, 'https://service.agent-network-protocol.com/wba/test');
                 }
 
                 showResponse('Successfully generated DID document and private key. \n\nWARNING: This DID document and private key are for testing purposes only. Do not use in a production environment!');

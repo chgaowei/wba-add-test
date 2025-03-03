@@ -1,7 +1,7 @@
 import type { DIDDocument, APIResponse, AuthResponse } from '../types';
 
-const BASE_URL = 'https://pi-unlimited.com';
-const AUTH_URL = 'agent-network-protocol.com'
+const BASE_URL = 'https://agent-did.com';
+const AUTH_URL = 'service.agent-network-protocol.com'
 
 export async function uploadDIDDocument(
     userId: string, 
@@ -89,7 +89,7 @@ export async function testAuthentication(
             body: JSON.stringify({
                 did_document: didDocument,
                 private_key: privateKey,
-                auth_url: 'https://agent-network-protocol.com/wba/test'
+                auth_url: 'https://service.agent-network-protocol.com/wba/test'
             })
         });
 
